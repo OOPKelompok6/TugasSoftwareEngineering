@@ -1,0 +1,78 @@
+﻿.bg-info {
+    background-color: skyblue !important;
+}
+
+.outfit-SemiBolds {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*Use for Visualization*/
+.Vis {
+    background-color: darkred !important;
+}
+
+.outfit-Lights {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.outfit-extraLights {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.alatsi-regular {
+    font-family: "Alatsi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.img-cfg {
+    max-width: 75%;
+    height: auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.header.h1{
+    text-align:center;
+}
+
+.header.h3{
+    text-align:center;
+}
+
+.hero {
+    display: inline-block;
+    text-align: left;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    text-align: left;
+}
+
+.dropdown-sections {
+    left: 50% !important;
+    outline: none !important;
+    width: 700px !important;
+}
+
+.border-none {
+    text-align:center;
+    font-size: 2.5rem;
+    border: 0;
+    border-bottom:dashed;
+    box-shadow:none;
+}
