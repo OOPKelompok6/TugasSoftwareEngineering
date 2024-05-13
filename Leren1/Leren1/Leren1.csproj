@@ -81,16 +81,18 @@
     </Content>
     <Content Include="Assets\Picture\1613460981-removebg-preview 1.png" />
     <Content Include="Assets\Picture\20110418163219583-removebg-preview.png" />
+    <Content Include="Assets\Picture\8295639.jpg" />
     <Content Include="Assets\Picture\djarum-removebg-preview 1.png" />
     <Content Include="Assets\Picture\Group 8.png" />
+    <Content Include="Assets\Picture\illustration_01.png" />
     <Content Include="Assets\Picture\image-removebg-preview 1.png" />
     <Content Include="Assets\Picture\LerenLogo.png" />
     <Content Include="Assets\Picture\Leren_Logo2.png" />
     <Content Include="Assets\Picture\PP.png" />
-    <Content Include="Assets\Picture\Revised.gif" />
     <Content Include="Assets\Picture\Social Icons-1.png" />
     <Content Include="Assets\Picture\Social Icons-2.png" />
     <Content Include="Assets\Picture\Social Icons.png" />
+    <Content Include="Assets\Picture\TileableBackground.png" />
     <Content Include="Models\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
@@ -102,7 +104,9 @@
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
     <Content Include="Pages\ArticleCreation.aspx" />
+    <Content Include="Pages\ArticleTemplate.aspx" />
     <Content Include="Pages\LandingPage.aspx" />
+    <Content Include="Pages\SectionsCreation.aspx" />
     <Content Include="Pages\SignInPage.aspx" />
     <Content Include="Pages\SignUpPage.aspx" />
     <Content Include="Styles\MasterStyle.css" />
@@ -163,12 +167,26 @@
     <Compile Include="Pages\ArticleCreation.aspx.designer.cs">
       <DependentUpon>ArticleCreation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ArticleTemplate.aspx.cs">
+      <DependentUpon>ArticleTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ArticleTemplate.aspx.designer.cs">
+      <DependentUpon>ArticleTemplate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LandingPage.aspx.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\LandingPage.aspx.designer.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SectionsCreation.aspx.cs">
+      <DependentUpon>SectionsCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SectionsCreation.aspx.designer.cs">
+      <DependentUpon>SectionsCreation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\SignInPage.aspx.cs">
       <DependentUpon>SignInPage.aspx</DependentUpon>

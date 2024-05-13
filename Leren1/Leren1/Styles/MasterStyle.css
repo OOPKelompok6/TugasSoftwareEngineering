@@ -70,9 +70,34 @@
 }
 
 .border-none {
-    text-align:center;
+    text-align: center;
     font-size: 2.5rem;
     border: 0;
-    border-bottom:dashed;
-    box-shadow:none;
+    border-bottom: dashed;
+    box-shadow: none;
+    mix-blend-mode: multiply;
+}
+
+.Bimage {
+    background-image: url('../Assets/Picture/8295639.jpg');
+    background-size: cover;
+}
+
+.BimageT {
+    background-image: url('../Assets/Picture/TileableBackground.png');
+    background-size: cover;
+    background-repeat:repeat-y;
+}
+
+.inpSec {
+    text-align: center;
+    font-size: 1rem;
+    border: 0;
+    border-bottom: dashed;
+    box-shadow: none;
+    mix-blend-mode: multiply;
+}
+
+.ratio {
+    width: 41.66666667% !important;
 }

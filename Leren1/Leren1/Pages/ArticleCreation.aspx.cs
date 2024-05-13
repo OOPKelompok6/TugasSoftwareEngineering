@@ -29,5 +29,44 @@ namespace Leren1.Pages
                 DropDownListSections.DataBind();
             }
         }
+
+        private String GenerateArticleID()
+        {
+            Random rnd = new Random();
+            int X = rnd.Next(1, 1000);
+            String ArticleID = String.Format("AR{0:000}", X);
+            return ArticleID;
+        }
+
+        //PlaceHolder nanti ganti jadi user iD beneran yang dikirim lewat session atau query http
+        //UserID nya
+
+        protected void ButtonCreate_Click(object sender, EventArgs e)
+        {
+            String articleId = GenerateArticleID();
+            String title = TextTitle.Text;
+            String subject = DropDownSubjects.Text;
+            String category = DropDownCategory.Text;
+            String sections = DropDownListSections.Text;
+            String subjectId = subjectHeaders.Where(s => s.SubjectTitle == subject).Select(s => s.SubjectID).FirstOrDefault().ToString();
+            String categoryId = categoryHeaders.Where(c => c.CategoryTitle == category).Select(c => c.CategoryID).FirstOrDefault().ToString();
+
+            ArticleHeader newArticle = new ArticleHeader()
+            {
+                ArticleTitle = title,
+                ArticleID = articleId,
+                SubjectID = subjectId,
+                CategoryID = categoryId,
+                //PlaceHolder nanti ganti jadi user iD beneran yang dikirim lewat session atau query http
+                //UserID nya
+                UserID = "UDBCA01876",
+            };
+
+            DatabaseEntities1 db = DatabaseSingleton.GetInstance();
+            db.ArticleHeaders.Add(newArticle);
+            db.SaveChanges();
+
+            Response.Redirect("~/Pages/SectionsCreation.aspx?Title=" + title + "&ID=" + articleId + "&Subject=" + subject + "&Category=" + category + "&Sections=" + sections);
+        }
     }
 }
