@@ -30,7 +30,7 @@ namespace Leren1.Pages
 
             HtmlGenericControl titleContainer = new HtmlGenericControl("div");
             titleContainer.ID = "titleContainer";
-            HtmlGenericControl mainTitle = new HtmlGenericControl("h3");
+            HtmlGenericControl mainTitle = new HtmlGenericControl("h1");
             mainTitle.Attributes["class"] = "alatsi-regular my-5";
             mainTitle.InnerHtml = title;
             titleContainer.Controls.Add(mainTitle);
@@ -58,7 +58,7 @@ namespace Leren1.Pages
             HtmlGenericControl dynamicDiv = new HtmlGenericControl("div");
             HtmlGenericControl dynamicVid = new HtmlGenericControl("iframe");
 
-            dynamicDiv.Attributes["class"] = "ratio ratio-16x9 col-sm-5 my-4";
+            dynamicDiv.Attributes["class"] = "ratio ratio-16x9 col-sm-7 my-4";
             dynamicVid.Attributes["height"] = "100%";
             dynamicVid.Attributes["width"] = "100%";
             dynamicVid.Attributes["src"] = pageObjects[i].ContentString;
@@ -73,7 +73,7 @@ namespace Leren1.Pages
             HtmlGenericControl dynamicDiv = new HtmlGenericControl("div");
             HtmlGenericControl dynamicImg = new HtmlGenericControl("img");
 
-            dynamicDiv.Attributes["class"] = "col-sm-5 my-4";
+            dynamicDiv.Attributes["class"] = "col-sm-7 my-4";
             dynamicImg.Attributes["class"] = "img-fluid object-fit-contain";
             dynamicImg.Attributes["src"] = pageObjects[i].ContentString;
             dynamicDiv.Controls.Add(dynamicImg);
@@ -85,10 +85,12 @@ namespace Leren1.Pages
         {
             HtmlGenericControl dynamicDiv = new HtmlGenericControl("div");
 
-            dynamicDiv.Attributes["class"] = "col-sm-7 text-wrap text-break text-start alatsi-regular fs-6 my-4S";
+            dynamicDiv.Attributes["class"] = "col-sm-7 text-wrap text-break text-start alatsi-regular fs-6 my-4 alatsi-regular";
             dynamicDiv.InnerHtml = pageObjects[i].ContentString;
 
             return dynamicDiv;
         }
+
+
     }
 }

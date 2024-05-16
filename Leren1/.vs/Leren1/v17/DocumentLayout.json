@@ -1,54 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\",
+  "WorkspaceRootPath": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\pages\\landingpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\edward\\downloads\\compressed\\tugassoftwareengineering-master\\tugassoftwareengineering-master\\leren1\\leren1\\pages\\coursepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\pages\\coursepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\leren1\\pages\\landingpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\pages\\landingpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\masters\\main.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\masters\\main.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\edward\\downloads\\compressed\\tugassoftwareengineering-master\\tugassoftwareengineering-master\\leren1\\leren1\\styles\\coursestyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\styles\\coursestyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\masters\\main.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\masters\\main.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\edward\\downloads\\compressed\\tugassoftwareengineering-master\\tugassoftwareengineering-master\\leren1\\leren1\\pages\\articlecreation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\pages\\articlecreation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\masters\\main.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\masters\\main.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\styles\\masterstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\leren1\\styles\\masterstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\styles\\masterstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\styles\\signinstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\styles\\signinstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C1C598B6AEAF7BDF8A0A1AF2AB0126F0_SSOFTWAREENGINEERING_MASTER_TUGASSOFTWAREENGINEERING_MASTER_LEREN1_LEREN1_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\pages\\signinpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\leren1\\pages\\signinpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\pages\\signinpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\pages\\signuppage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\pages\\signuppage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\pages\\signinpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\pages\\signinpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\pages\\signinpage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\pages\\signinpage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\pages\\landingpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\pages\\landingpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|c:\\users\\michael w. d. purba\\documents\\leren1\\leren1\\pages\\landingpage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87F508A-C58D-435A-A06D-E21612F36150}|Leren1\\Leren1.csproj|solutionrelative:leren1\\pages\\landingpage.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,163 +37,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Main.Master",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Masters\\Main.Master",
-              "RelativeDocumentMoniker": "Leren1\\Masters\\Main.Master",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Masters\\Main.Master",
-              "RelativeToolTip": "Leren1\\Masters\\Main.Master",
+              "DocumentIndex": 0,
+              "Title": "CoursePage.aspx",
+              "DocumentMoniker": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Pages\\CoursePage.aspx",
+              "RelativeDocumentMoniker": "Leren1\\Pages\\CoursePage.aspx",
+              "ToolTip": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Pages\\CoursePage.aspx",
+              "RelativeToolTip": "Leren1\\Pages\\CoursePage.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-02T14:02:33.357Z",
+              "WhenOpened": "2024-05-15T06:47:46.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LandingPage.aspx",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\LandingPage.aspx",
-              "RelativeDocumentMoniker": "Leren1\\Pages\\LandingPage.aspx",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\LandingPage.aspx",
-              "RelativeToolTip": "Leren1\\Pages\\LandingPage.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-02T13:48:11.121Z",
+              "DocumentIndex": 2,
+              "Title": "CourseStyle.css",
+              "DocumentMoniker": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Styles\\CourseStyle.css",
+              "RelativeDocumentMoniker": "Leren1\\Styles\\CourseStyle.css",
+              "ToolTip": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Styles\\CourseStyle.css",
+              "RelativeToolTip": "Leren1\\Styles\\CourseStyle.css",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-15T06:47:36.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "MasterStyle.css",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Styles\\MasterStyle.css",
+              "DocumentMoniker": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Styles\\MasterStyle.css",
               "RelativeDocumentMoniker": "Leren1\\Styles\\MasterStyle.css",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Styles\\MasterStyle.css",
+              "ToolTip": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Styles\\MasterStyle.css",
               "RelativeToolTip": "Leren1\\Styles\\MasterStyle.css",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADMAAAAAAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAkwCIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-02T13:52:52.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T19:21:47.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SignInStyle.css",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Styles\\SignInStyle.css",
-              "RelativeDocumentMoniker": "Leren1\\Styles\\SignInStyle.css",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Styles\\SignInStyle.css",
-              "RelativeToolTip": "Leren1\\Styles\\SignInStyle.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-02T13:53:18.024Z",
+              "DocumentIndex": 1,
+              "Title": "LandingPage.aspx",
+              "DocumentMoniker": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Pages\\LandingPage.aspx",
+              "RelativeDocumentMoniker": "Leren1\\Pages\\LandingPage.aspx",
+              "ToolTip": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Pages\\LandingPage.aspx",
+              "RelativeToolTip": "Leren1\\Pages\\LandingPage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-14T19:22:33.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Main.Master.cs",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Masters\\Main.Master.cs",
-              "RelativeDocumentMoniker": "Leren1\\Masters\\Main.Master.cs",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Masters\\Main.Master.cs",
-              "RelativeToolTip": "Leren1\\Masters\\Main.Master.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T14:08:05.383Z",
+              "Title": "ArticleCreation.aspx",
+              "DocumentMoniker": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Pages\\ArticleCreation.aspx",
+              "RelativeDocumentMoniker": "Leren1\\Pages\\ArticleCreation.aspx",
+              "ToolTip": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Pages\\ArticleCreation.aspx",
+              "RelativeToolTip": "Leren1\\Pages\\ArticleCreation.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-14T19:11:05.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Main.Master.designer.cs",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Masters\\Main.Master.designer.cs",
-              "RelativeDocumentMoniker": "Leren1\\Masters\\Main.Master.designer.cs",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Masters\\Main.Master.designer.cs",
-              "RelativeToolTip": "Leren1\\Masters\\Main.Master.designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T14:08:07.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LandingPage.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\LandingPage.aspx.cs",
-              "RelativeDocumentMoniker": "Leren1\\Pages\\LandingPage.aspx.cs",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\LandingPage.aspx.cs",
-              "RelativeToolTip": "Leren1\\Pages\\LandingPage.aspx.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T13:51:18.163Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C1C598B6AEAF7BDF8A0A1AF2AB0126F0_SSOFTWAREENGINEERING_MASTER_TUGASSOFTWAREENGINEERING_MASTER_LEREN1_LEREN1_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-14T19:17:40.833Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "SignInPage.aspx",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\SignInPage.aspx",
+              "DocumentMoniker": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Pages\\SignInPage.aspx",
               "RelativeDocumentMoniker": "Leren1\\Pages\\SignInPage.aspx",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\SignInPage.aspx",
+              "ToolTip": "C:\\Users\\Edward\\Downloads\\Compressed\\TugasSoftwareEngineering-master\\TugasSoftwareEngineering-master\\Leren1\\Leren1\\Pages\\SignInPage.aspx",
               "RelativeToolTip": "Leren1\\Pages\\SignInPage.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-02T13:48:16.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SignInPage.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\SignInPage.aspx.cs",
-              "RelativeDocumentMoniker": "Leren1\\Pages\\SignInPage.aspx.cs",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\SignInPage.aspx.cs",
-              "RelativeToolTip": "Leren1\\Pages\\SignInPage.aspx.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T13:48:48.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SignUpPage.aspx",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\SignUpPage.aspx",
-              "RelativeDocumentMoniker": "Leren1\\Pages\\SignUpPage.aspx",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\SignUpPage.aspx",
-              "RelativeToolTip": "Leren1\\Pages\\SignUpPage.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-30T06:26:44.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SignInPage.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\SignInPage.aspx.designer.cs",
-              "RelativeDocumentMoniker": "Leren1\\Pages\\SignInPage.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\SignInPage.aspx.designer.cs",
-              "RelativeToolTip": "Leren1\\Pages\\SignInPage.aspx.designer.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T13:52:36.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LandingPage.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\LandingPage.aspx.designer.cs",
-              "RelativeDocumentMoniker": "Leren1\\Pages\\LandingPage.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\Michael W. D. Purba\\Documents\\Leren1\\Leren1\\Pages\\LandingPage.aspx.designer.cs",
-              "RelativeToolTip": "Leren1\\Pages\\LandingPage.aspx.designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T13:51:16.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T18:01:10.384Z"
             }
           ]
         }

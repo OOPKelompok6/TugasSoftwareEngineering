@@ -9,31 +9,35 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container">
+        <div class="containt">
             <h2>Sign In</h2>
             <img src="../Assets/Picture/Leren_Logo2.png" />
 
-            <div class="form-group">
-                <label for="EmailLbl">Email</label>
-                <asp:TextBox ID="EmailTxt" runat="server" CssClass="form-control" placeholder="Input Your Email"></asp:TextBox>
+            <div class="form">
+                <asp:Label ID="EmailLbl" runat="server" Text="Email" CssClass="form-label"></asp:Label>
+                <asp:TextBox ID="EmailTxt" runat="server" CssClass="input-box"></asp:TextBox>
             </div>
 
-            <div class="form-group">
-                <label for="PasswordLbl">Password</label>
-                <asp:TextBox ID="PasswordTxt" runat="server" TextMode="Password" CssClass="form-control" placeholder="Input Your Password"></asp:TextBox>
+            <div class="form">
+                <asp:Label ID="PasswordLbl" runat="server" Text="Password" CssClass="form-label"></asp:Label>
+                <asp:TextBox ID="PasswordTxt" runat="server" CssClass="input-box" TextMode="Password"></asp:TextBox>
             </div>
 
-            <div class="forgotpassword">
-                <asp:LinkButton ID="forgotpasswordLb" runat="server">Forgot password?</asp:LinkButton>
+            <div class="form-check">
+                <div class="check-remember">
+                    <asp:CheckBox ID="RememberCb" runat="server" />
+                    <asp:Label ID="RememberLbl" runat="server" Text="Remember me?" CssClass="check-label"></asp:Label>
+                </div>
+                <asp:LinkButton ID="ForgetLb" runat="server" CssClass="forget-link">Forgot Password?</asp:LinkButton>
             </div>
 
-            <div class="btn-container">
-                <asp:Button ID="btnSubmit" runat="server" Text="Sign In" CssClass="btn" OnClick="btnSubmit_Click"  />
+            <div class="form">
+                <asp:Button ID="SignBtn" runat="server" Text="Sign In" CssClass="btn" OnClick="SignBtn_Click" />
             </div>
 
-            <div class="DonthaveAccount">
-                <asp:Label ID="DonthaveAccountLbl" runat="server" Text="Don't have an account?"></asp:Label>
-                <asp:LinkButton ID="DonthaveAccountLb" CssClass="donthaveAccount" runat="server">Sign Up</asp:LinkButton>
+            <div class="form-account">
+                <asp:Label ID="AccountLbl" runat="server" Text="Don't have an account?" CssClass="form-label"></asp:Label>
+                <asp:LinkButton ID="AccountLb" runat="server" CssClass="sign-up-link"> Sign Up</asp:LinkButton>
             </div>
         </div>
     </form>

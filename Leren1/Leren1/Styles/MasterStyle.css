@@ -99,5 +99,21 @@
 }
 
 .ratio {
-    width: 41.66666667% !important;
+    width: 58.33333333% !important;
+}
+
+.sticky-topCustom {
+    position: webkit-sticky;
+    position: sticky;
+    top: 25%;
+    z-index: 1020;
+}
+
+.rotate {
+    writing-mode:vertical-rl;
+}
+
+.bSections {
+    letter-spacing: 0.6rem;
+    color: white;
 }

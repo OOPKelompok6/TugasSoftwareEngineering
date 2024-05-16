@@ -13,5 +13,16 @@ namespace Leren1.Pages
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Pages/SignInPage.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Pages/SignInPage.aspx");
+
+        }
     }
 }
