@@ -55,6 +55,21 @@ namespace Leren1.Pages
             dynamicDiv.ID = "dynamicDiv" + Counter;
             dynamicDiv.Attributes["class"] = "mx-auto my-5 input-group";
 
+            HtmlGenericControl textDiv = new HtmlGenericControl("div");
+            textDiv.Attributes["class"] = "pt-4 b1";
+
+            CheckBox sectBreak = new CheckBox();
+            sectBreak.ID = "checkBox" + Convert.ToString(Counter);
+            sectBreak.Attributes["class"] = "inpSec2 pt-2 mt-0";
+            sectBreak.Attributes["runat"] = "server";
+            textDiv.Controls.Add(sectBreak);
+
+            HtmlGenericControl textSpan = new HtmlGenericControl("span");
+            textSpan.Attributes["class"] = "align-self-stretch inpSec alatsi-regular";
+            textSpan.InnerHtml = "Section Break";
+            textDiv.Controls.Add(textSpan);
+            dynamicDiv.Controls.Add(textDiv);
+
             TextBox ContentBox = new TextBox();
             ContentBox.ID = "ContentBox" + Convert.ToString(Counter);
             ContentBox.Attributes["class"] = "form-control inpSec alatsi-regular";
@@ -96,9 +111,12 @@ namespace Leren1.Pages
                 String curDdlStr = "ddlType" + Convert.ToString(i);
                 String curTextBoxStr = "ContentBox" + Convert.ToString(i);
                 String curLblStr = "errLabel" + Convert.ToString(i);
+                String curLbxStr = "checkBox" + Convert.ToString(i);
                 DropDownList curDdl = this.Master.FindControl("ContentPlaceHolder1").FindControl(curDdlStr) as DropDownList;
                 TextBox curTextBox = this.Master.FindControl("ContentPlaceHolder1").FindControl(curTextBoxStr) as TextBox;
                 Label curLabel = this.Master.FindControl("ContentPlaceHolder1").FindControl(curLblStr) as Label;
+                CheckBox curBox = this.Master.FindControl("ContentPlaceHolder1").FindControl(curLbxStr) as CheckBox;
+
 
                 String objId = "";
                 while(true)
@@ -127,13 +145,20 @@ namespace Leren1.Pages
                     return;
                 }
 
+                int boxCond = 0;
+                if(curBox.Checked)
+                {
+                    boxCond = 1;
+                }
+
                 ArticleObjectPool pool = new ArticleObjectPool()
                 {
                     ArticleID = ArticleID,
                     BuildOrder = i,
                     ObjectType = Convert.ToInt32(curDdl.SelectedValue),
                     ContentString = curTextBox.Text,
-                    ObjectID = objId
+                    ObjectID = objId,
+                    IsPageBreak = boxCond
                 };
 
                 curObjLclPool.Add(pool);

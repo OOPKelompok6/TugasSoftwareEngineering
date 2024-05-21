@@ -3,16 +3,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Outfit:wght@200&display=swap" rel="stylesheet">
     <script src="../JsScript/clientsideScript.js"></script>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
     <asp:Panel ID="DynamicContentPanel" runat="server">
-        <div class="flex-row d-flex sticky-topCustom col-sm-2 me-auto">
-            <div id="secDiv" class="navbar flex-column flex-grow w-100 bg-info">
-                <div id="list-example" class="list-group justify-self-center">
-                  <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                </div>
-            </div>
-            <div id="BtnSections" class="btn bg-primary fs-5 alatsi-regular tracking-widest rotate" style="letter-spacing: 0.6rem; color:white;">SECTIONS</div>
-        </div>
+        <!-- Dynamic Content Here -->
     </asp:Panel>
+    <div ID="sideNavBar" class="flex-row d-flex sticky-topCustom col-sm-2 ">
+        <nav ID="secDiv" runat="server" class="nav flex-column nav-pills flex-grow w-100 bg-info">
+             <!-- Dynamic Content Here -->
+        </nav>
+        <div id="BtnSections" class="btn bg-primary fs-5 alatsi-regular tracking-widest rotate bSectionsT" onclick="collapsibleSections()" >SECTIONS</div>
+    </div>
 </asp:Content>
 

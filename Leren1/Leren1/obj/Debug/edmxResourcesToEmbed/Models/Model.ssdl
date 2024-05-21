@@ -19,6 +19,7 @@
     <Property Name="BuildOrder" Type="int" Nullable="false" />
     <Property Name="ObjectType" Type="int" Nullable="false" />
     <Property Name="ContentString" Type="varchar" MaxLength="5000" Nullable="false" />
+    <Property Name="IsPageBreak" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="CategoryHeader">
     <Key>

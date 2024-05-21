@@ -59,7 +59,7 @@ namespace Leren1.Pages
                 CategoryID = categoryId,
                 //PlaceHolder nanti ganti jadi user iD beneran yang dikirim lewat session atau query http
                 //UserID nya
-                UserID = "UDBCA01876",
+                UserID = "LER002",
             };
 
             DatabaseEntities1 db = DatabaseSingleton.GetInstance();

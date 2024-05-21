@@ -24,6 +24,7 @@
           <Property Name="BuildOrder" Type="int" Nullable="false" />
           <Property Name="ObjectType" Type="int" Nullable="false" />
           <Property Name="ContentString" Type="varchar" MaxLength="5000" Nullable="false" />
+          <Property Name="IsPageBreak" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="CategoryHeader">
           <Key>
@@ -207,6 +208,7 @@
           <Property Name="ObjectType" Type="Int32" Nullable="false" />
           <Property Name="ContentString" Type="String" Nullable="false" MaxLength="5000" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="ArticleHeader" Relationship="DatabaseModel.FK_ArticleObjectPool_ToArticleHeader" FromRole="ArticleObjectPool" ToRole="ArticleHeader" />
+          <Property Name="IsPageBreak" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="CategoryHeader">
           <Key>
@@ -320,6 +322,7 @@
           <EntitySetMapping Name="ArticleObjectPools">
             <EntityTypeMapping TypeName="DatabaseModel.ArticleObjectPool">
               <MappingFragment StoreEntitySet="ArticleObjectPool">
+                <ScalarProperty Name="IsPageBreak" ColumnName="IsPageBreak" />
                 <ScalarProperty Name="ContentString" ColumnName="ContentString" />
                 <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
                 <ScalarProperty Name="BuildOrder" ColumnName="BuildOrder" />

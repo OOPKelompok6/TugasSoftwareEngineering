@@ -24,7 +24,7 @@ namespace Leren1.Pages
             int Sections = Convert.ToInt32(Request["Sections"]);
 
             HtmlGenericControl mainDiv = new HtmlGenericControl("div");
-            mainDiv.Attributes["class"] = "d-flex flex-column align-items-center";
+            mainDiv.Attributes["class"] = "d-flex flex-column align-items-center top-0";
             mainDiv.ID = "mainContainer";
             DynamicContentPanel.Controls.Add(mainDiv);
 
@@ -38,6 +38,7 @@ namespace Leren1.Pages
 
             for (int i = 0; i < Sections; i++)
             {
+                populateSidebar(i);
                 if (pageObjects[i].ObjectType == 1)
                 {
                     this.Master.FindControl("ContentPlaceHolder1").FindControl("DynamicContentPanel").FindControl("mainContainer").Controls.Add(DynObjectText(i));
@@ -50,7 +51,13 @@ namespace Leren1.Pages
                 {
                     this.Master.FindControl("ContentPlaceHolder1").FindControl("DynamicContentPanel").FindControl("mainContainer").Controls.Add(DynObjectVideo(i));
                 }
+
+                if (pageObjects[i].IsPageBreak == 1)
+                {
+                    this.Master.FindControl("ContentPlaceHolder1").FindControl("DynamicContentPanel").FindControl("mainContainer").Controls.Add(createSectionBreak());
+                }
             }
+            
         }
 
         private HtmlGenericControl DynObjectVideo(int i)
@@ -86,11 +93,40 @@ namespace Leren1.Pages
             HtmlGenericControl dynamicDiv = new HtmlGenericControl("div");
 
             dynamicDiv.Attributes["class"] = "col-sm-7 text-wrap text-break text-start alatsi-regular fs-6 my-4 alatsi-regular";
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("**t**", "<h3>");
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("^^t^^", "</h3>");
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("**p**", "<p>");
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("^^p^^", "</p>");
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("**b**", "<b>");
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("^^b^^", "</b>");
             dynamicDiv.InnerHtml = pageObjects[i].ContentString;
 
             return dynamicDiv;
         }
 
+        private void populateSidebar(int i)
+        {
+            HtmlGenericControl sidebarItems = new HtmlGenericControl("a");
+            sidebarItems.Attributes["class"] = "nav-link alatsi-regular align-self-center";
+            sidebarItems.Attributes["href"] = "#item-" + Convert.ToString(i + 1);
+            sidebarItems.InnerHtml = "Section " + Convert.ToString(i + 1);
+            this.Master.FindControl("ContentPlaceHolder1").FindControl("secDiv").Controls.Add(sidebarItems);
 
+            HtmlGenericControl dynamicDiv = new HtmlGenericControl("div");
+            dynamicDiv.Attributes["id"] = "item-" + Convert.ToString(i + 1);
+            dynamicDiv.Attributes["style"] = "display: hidden;";
+            this.Master.FindControl("ContentPlaceHolder1").FindControl("DynamicContentPanel").FindControl("mainContainer").Controls.Add(dynamicDiv);
+        }
+
+        private HtmlGenericControl createSectionBreak()
+        {
+            HtmlGenericControl dynamicDiv = new HtmlGenericControl("div");
+            dynamicDiv.Attributes["class"] = "col-sm-7 mx-auto my-3";
+            HtmlGenericControl dynamicLine = new HtmlGenericControl("hr");
+            dynamicLine.Attributes["class"] = "border-2 border-dark";
+            dynamicDiv.Controls.Add(dynamicLine);
+            
+            return dynamicDiv;
+        }
     }
 }

@@ -64,6 +64,7 @@
     <Property Name="ObjectType" Type="Int32" Nullable="false" />
     <Property Name="ContentString" Type="String" Nullable="false" MaxLength="5000" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="ArticleHeader" Relationship="DatabaseModel.FK_ArticleObjectPool_ToArticleHeader" FromRole="ArticleObjectPool" ToRole="ArticleHeader" />
+    <Property Name="IsPageBreak" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="CategoryHeader">
     <Key>

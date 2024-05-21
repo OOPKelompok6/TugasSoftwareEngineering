@@ -2,6 +2,10 @@
     background-color: skyblue !important;
 }
 
+hr {
+    height: 2px !important;
+}
+
 .outfit-SemiBolds {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -98,6 +102,15 @@
     mix-blend-mode: multiply;
 }
 
+.inpSec2 {
+    text-align: center;
+    font-size: 1rem;
+    border: 0;
+    border-bottom: none;
+    box-shadow: none;
+    mix-blend-mode: multiply;
+}
+
 .ratio {
     width: 58.33333333% !important;
 }
@@ -105,7 +118,8 @@
 .sticky-topCustom {
     position: webkit-sticky;
     position: sticky;
-    top: 25%;
+    margin-top: 8%;
+    bottom: 46%;
     z-index: 1020;
 }
 
@@ -116,4 +130,23 @@
 .bSections {
     letter-spacing: 0.6rem;
     color: white;
+}
+
+.bSectionsT {
+    letter-spacing: 0.6rem;
+    color: white;
+    padding-top: 7%;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.b1 {
+    background-color: none !important; 
+    border: none !important; 
 }

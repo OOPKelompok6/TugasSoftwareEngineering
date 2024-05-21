@@ -28,6 +28,7 @@
     <EntitySetMapping Name="ArticleObjectPools">
       <EntityTypeMapping TypeName="DatabaseModel.ArticleObjectPool">
         <MappingFragment StoreEntitySet="ArticleObjectPool">
+          <ScalarProperty Name="IsPageBreak" ColumnName="IsPageBreak" />
           <ScalarProperty Name="ContentString" ColumnName="ContentString" />
           <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
           <ScalarProperty Name="BuildOrder" ColumnName="BuildOrder" />
