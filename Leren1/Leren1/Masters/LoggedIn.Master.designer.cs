@@ -51,13 +51,13 @@ namespace Leren1.Masters
         protected global::System.Web.UI.WebControls.Button SearchBtn;
 
         /// <summary>
-        /// DropdownMenu control.
+        /// CreateArtContainer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DropdownMenu;
+        protected global::System.Web.UI.WebControls.Panel CreateArtContainer;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

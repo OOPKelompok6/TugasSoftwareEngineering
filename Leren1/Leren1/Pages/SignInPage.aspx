@@ -37,7 +37,7 @@
 
             <div class="form-account">
                 <asp:Label ID="AccountLbl" runat="server" Text="Don't have an account?" CssClass="form-label"></asp:Label>
-                <asp:LinkButton ID="AccountLb" runat="server" CssClass="sign-up-link"> Sign Up</asp:LinkButton>
+                <asp:LinkButton ID="AccountLb" runat="server" CssClass="sign-up-link" OnClick="AccountLb_Click">Sign Up</asp:LinkButton>
             </div>
         </div>
     </form>

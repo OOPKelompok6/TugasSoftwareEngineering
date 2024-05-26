@@ -53,6 +53,7 @@
     <NavigationProperty Name="SubjectHeader" Relationship="DatabaseModel.FK_ArticleHeader_ToSubjectHeader" FromRole="ArticleHeader" ToRole="SubjectHeader" />
     <NavigationProperty Name="User" Relationship="DatabaseModel.FK_ArticleHeader_ToUser" FromRole="ArticleHeader" ToRole="User" />
     <NavigationProperty Name="ArticleObjectPools" Relationship="DatabaseModel.FK_ArticleObjectPool_ToArticleHeader" FromRole="ArticleHeader" ToRole="ArticleObjectPool" />
+    <Property Name="Sections" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="ArticleObjectPool">
     <Key>

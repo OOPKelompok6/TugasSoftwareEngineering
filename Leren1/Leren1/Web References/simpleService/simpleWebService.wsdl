@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetSuggestions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="curText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSuggestionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSuggestionsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSuggestionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSuggestions" />
+  </wsdl:message>
+  <wsdl:message name="GetSuggestionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSuggestionsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="simpleWebServiceSoap">
+    <wsdl:operation name="GetSuggestions">
+      <wsdl:input message="tns:GetSuggestionsSoapIn" />
+      <wsdl:output message="tns:GetSuggestionsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="simpleWebServiceSoap" type="tns:simpleWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSuggestions">
+      <soap:operation soapAction="http://tempuri.org/GetSuggestions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="simpleWebServiceSoap12" type="tns:simpleWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSuggestions">
+      <soap12:operation soapAction="http://tempuri.org/GetSuggestions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="simpleWebService">
+    <wsdl:port name="simpleWebServiceSoap" binding="tns:simpleWebServiceSoap">
+      <soap:address location="https://localhost:44314/WebService/simpleWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="simpleWebServiceSoap12" binding="tns:simpleWebServiceSoap12">
+      <soap12:address location="https://localhost:44314/WebService/simpleWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

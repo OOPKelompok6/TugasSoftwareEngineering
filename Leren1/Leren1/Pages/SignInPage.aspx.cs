@@ -1,7 +1,10 @@
 ﻿using Leren1.Models;
+using Leren1.Repository;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -10,7 +13,7 @@ namespace Leren1.Pages
 {
     public partial class SignInPage : System.Web.UI.Page
     {
-        private DatabaseEntities1 db = new DatabaseEntities1 ();
+        private DatabaseEntities1 db = DatabaseSingleton.GetInstance();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -26,24 +29,31 @@ namespace Leren1.Pages
 
             if (user != null)
             {
-                if(user.Role == "Teacher")
+                Dictionary<String, String> userDict  = new Dictionary<String, String>() 
                 {
-                    Response.Redirect("/Pages/ArticleCreation.aspx");
-                }
-
-                if(user.Role == "Student")
-                {
-                    Response.Redirect("/Pages/CoursePage.aspx");
-                }
+                    {"Id",  user.Id},
+                    {"Name",  user.Name},
+                    {"Password", user.Password},
+                    {"Email", user.Email},
+                    {"DOB", Convert.ToString(user.DOB)},
+                    {"Phone_Number", Convert.ToString(user.Phone_number)},
+                    {"Role", user.Role}
+                };
+                String userJSON = JsonConvert.SerializeObject(userDict);
+                HttpCookie userCookie = new HttpCookie("user-cookie", userJSON);
 
                 if (Check)
                 {
-                    HttpCookie cookie = new HttpCookie("user-cookie");
-                    cookie.Value = user.Id.ToString();
-                    cookie.Expires = DateTime.Now.AddMinutes(2);
-                    Response.Cookies.Add(cookie);
+                    userCookie.Expires = DateTime.Now.AddDays(7);
                 }
+                Response.Cookies.Add(userCookie);
+                Response.Redirect("HomepageStudent.aspx");
             }
+        }
+
+        protected void AccountLb_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("SignUpPage.aspx");
         }
     }
 }

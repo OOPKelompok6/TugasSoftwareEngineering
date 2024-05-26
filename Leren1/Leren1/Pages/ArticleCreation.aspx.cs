@@ -1,4 +1,5 @@
-﻿using Leren1.Models;
+﻿using Leren1.Masters;
+using Leren1.Models;
 using Leren1.Repository;
 using System;
 using System.Collections.Generic;
@@ -38,9 +39,6 @@ namespace Leren1.Pages
             return ArticleID;
         }
 
-        //PlaceHolder nanti ganti jadi user iD beneran yang dikirim lewat session atau query http
-        //UserID nya
-
         protected void ButtonCreate_Click(object sender, EventArgs e)
         {
             String articleId = GenerateArticleID();
@@ -57,16 +55,15 @@ namespace Leren1.Pages
                 ArticleID = articleId,
                 SubjectID = subjectId,
                 CategoryID = categoryId,
-                //PlaceHolder nanti ganti jadi user iD beneran yang dikirim lewat session atau query http
-                //UserID nya
-                UserID = "LER002",
+                Sections = Convert.ToInt32(sections),
+                UserID = ((LoggedIn)this.Master).curUser.Id
             };
 
             DatabaseEntities1 db = DatabaseSingleton.GetInstance();
             db.ArticleHeaders.Add(newArticle);
             db.SaveChanges();
 
-            Response.Redirect("~/Pages/SectionsCreation.aspx?Title=" + title + "&ID=" + articleId + "&Subject=" + subject + "&Category=" + category + "&Sections=" + sections);
+            Response.Redirect("~/Pages/SectionsCreation.aspx?Title=" + title + "&ID=" + articleId + "&Subject=" + subject + "&Category=" + category + "&Sections=" + sections + "&IsUpdate=0");
         }
     }
 }

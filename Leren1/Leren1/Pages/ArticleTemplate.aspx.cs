@@ -77,15 +77,18 @@ namespace Leren1.Pages
 
         private HtmlGenericControl DynObjectImage(int i)
         {
+            HtmlGenericControl dynamicCon = new HtmlGenericControl("div");
             HtmlGenericControl dynamicDiv = new HtmlGenericControl("div");
             HtmlGenericControl dynamicImg = new HtmlGenericControl("img");
 
-            dynamicDiv.Attributes["class"] = "col-sm-7 my-4";
+            dynamicCon.Attributes["class"] = "col-sm-7 d-flex my-4";
+            dynamicDiv.Attributes["class"] = "mx-auto";
             dynamicImg.Attributes["class"] = "img-fluid object-fit-contain";
             dynamicImg.Attributes["src"] = pageObjects[i].ContentString;
             dynamicDiv.Controls.Add(dynamicImg);
+            dynamicCon.Controls.Add(dynamicDiv);
 
-            return dynamicDiv;
+            return dynamicCon;
         }
 
         private HtmlGenericControl DynObjectText(int i)
@@ -99,6 +102,10 @@ namespace Leren1.Pages
             pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("^^p^^", "</p>");
             pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("**b**", "<b>");
             pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("^^b^^", "</b>");
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("**math-dsp**", "\\[");
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("^^math-dsp^^", "\\]");
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("**math-inl**", "\\(");
+            pageObjects[i].ContentString = pageObjects[i].ContentString.Replace("^^math-inl^^", "\\)");
             dynamicDiv.InnerHtml = pageObjects[i].ContentString;
 
             return dynamicDiv;

@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -50,6 +53,9 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -82,6 +88,10 @@
     <Content Include="Assets\Picture\1613460981-removebg-preview 1.png" />
     <Content Include="Assets\Picture\20110418163219583-removebg-preview.png" />
     <Content Include="Assets\Picture\8295639.jpg" />
+    <Content Include="Assets\Picture\abdul.jpg" />
+    <Content Include="Assets\Picture\Artikel.png" />
+    <Content Include="Assets\Picture\Bahasa.png" />
+    <Content Include="Assets\Picture\Biologi.png" />
     <Content Include="Assets\Picture\Course1.png" />
     <Content Include="Assets\Picture\Course2.jpeg" />
     <Content Include="Assets\Picture\Course3.jpeg" />
@@ -91,21 +101,38 @@
     <Content Include="Assets\Picture\CourseDetail3.png" />
     <Content Include="Assets\Picture\CourseDetail4.png" />
     <Content Include="Assets\Picture\djarum-removebg-preview 1.png" />
+    <Content Include="Assets\Picture\Ekonomi.png" />
+    <Content Include="Assets\Picture\event1.png" />
+    <Content Include="Assets\Picture\event3.png" />
+    <Content Include="Assets\Picture\Filsafat.png" />
+    <Content Include="Assets\Picture\Fisika2.png" />
     <Content Include="Assets\Picture\Group 8.png" />
+    <Content Include="Assets\Picture\Hukum.png" />
     <Content Include="Assets\Picture\illustration_01.png" />
     <Content Include="Assets\Picture\image-removebg-preview 1.png" />
+    <Content Include="Assets\Picture\Informatika.png" />
+    <Content Include="Assets\Picture\Jenny.jpg" />
+    <Content Include="Assets\Picture\Kimia.png" />
     <Content Include="Assets\Picture\LerenLogo.png" />
     <Content Include="Assets\Picture\Leren_Logo2.png" />
+    <Content Include="Assets\Picture\Matematika.png" />
     <Content Include="Assets\Picture\Pic1.png" />
     <Content Include="Assets\Picture\Pic2.jpg" />
     <Content Include="Assets\Picture\Pic3.jpeg" />
     <Content Include="Assets\Picture\PP.png" />
+    <Content Include="Assets\Picture\Shah.png" />
+    <Content Include="Assets\Picture\Pace.png" />
+    <Content Include="Assets\Picture\Sejarah.png" />
     <Content Include="Assets\Picture\Social Icons-1.png" />
     <Content Include="Assets\Picture\Social Icons-2.png" />
     <Content Include="Assets\Picture\Social Icons.png" />
+    <Content Include="Assets\Picture\sorry.gif" />
+    <Content Include="Assets\Picture\Success.gif" />
     <Content Include="Assets\Picture\TileableBackground.png" />
     <Content Include="Assets\Video\bg1.mp4" />
+    <Content Include="Pages\OperationSuccess.aspx" />
     <Content Include="JsScript\clientsideScript.js" />
+    <Content Include="JsScript\HomepageStudentJS.js" />
     <Content Include="Models\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
@@ -120,14 +147,20 @@
     <Content Include="Pages\ArticleTemplate.aspx" />
     <Content Include="Pages\CourseDetailPage.aspx" />
     <Content Include="Pages\CoursePage.aspx" />
+    <Content Include="Pages\HomepageStudent.aspx" />
     <Content Include="Pages\LandingPage.aspx" />
+    <Content Include="Pages\ProfilePage.aspx" />
+    <Content Include="Pages\SearchTemplate.aspx" />
     <Content Include="Pages\SectionsCreation.aspx" />
     <Content Include="Pages\SignInPage.aspx" />
     <Content Include="Pages\SignUpPage.aspx" />
+    <Content Include="Pages\StayTunedPage.aspx" />
     <Content Include="Styles\CourseDetailStyle.css" />
     <Content Include="Styles\CourseStyle.css" />
+    <Content Include="Styles\HomepageStudent.css" />
     <Content Include="Styles\LandingStyle.css" />
     <Content Include="Styles\MasterStyle.css" />
+    <Content Include="Styles\ProfileStyle.css" />
     <Content Include="Styles\SignInStyle.css" />
     <Content Include="Styles\SignUpStyle.css" />
     <Content Include="Web.config" />
@@ -206,12 +239,40 @@
     <Compile Include="Pages\CoursePage.aspx.designer.cs">
       <DependentUpon>CoursePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\HomepageStudent.aspx.cs">
+      <DependentUpon>HomepageStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HomepageStudent.aspx.designer.cs">
+      <DependentUpon>HomepageStudent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LandingPage.aspx.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\LandingPage.aspx.designer.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OperationSuccess.aspx.cs">
+      <DependentUpon>OperationSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\OperationSuccess.aspx.designer.cs">
+      <DependentUpon>OperationSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SearchTemplate.aspx.cs">
+      <DependentUpon>SearchTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SearchTemplate.aspx.designer.cs">
+      <DependentUpon>SearchTemplate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\SectionsCreation.aspx.cs">
       <DependentUpon>SectionsCreation.aspx</DependentUpon>
@@ -234,9 +295,17 @@
     <Compile Include="Pages\SignUpPage.aspx.designer.cs">
       <DependentUpon>SignUpPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\StayTunedPage.aspx.cs">
+      <DependentUpon>StayTunedPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\StayTunedPage.aspx.designer.cs">
+      <DependentUpon>StayTunedPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\DatabaseSingleton.cs" />
     <Compile Include="Repository\UserRepository.cs" />
+    <Compile Include="JsScript\JSONtoObjectsUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Masters\Main.Master" />
@@ -260,6 +329,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -17,6 +17,7 @@
     <EntitySetMapping Name="ArticleHeaders">
       <EntityTypeMapping TypeName="DatabaseModel.ArticleHeader">
         <MappingFragment StoreEntitySet="ArticleHeader">
+          <ScalarProperty Name="Sections" ColumnName="Sections" />
           <ScalarProperty Name="ArticleTitle" ColumnName="ArticleTitle" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />

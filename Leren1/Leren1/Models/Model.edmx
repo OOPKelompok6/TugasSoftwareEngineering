@@ -14,6 +14,7 @@
           <Property Name="SubjectID" Type="varchar" MaxLength="5" Nullable="false" />
           <Property Name="UserID" Type="char" MaxLength="10" Nullable="false" />
           <Property Name="ArticleTitle" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Sections" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="ArticleObjectPool">
           <Key>
@@ -197,6 +198,7 @@
           <NavigationProperty Name="SubjectHeader" Relationship="DatabaseModel.FK_ArticleHeader_ToSubjectHeader" FromRole="ArticleHeader" ToRole="SubjectHeader" />
           <NavigationProperty Name="User" Relationship="DatabaseModel.FK_ArticleHeader_ToUser" FromRole="ArticleHeader" ToRole="User" />
           <NavigationProperty Name="ArticleObjectPools" Relationship="DatabaseModel.FK_ArticleObjectPool_ToArticleHeader" FromRole="ArticleHeader" ToRole="ArticleObjectPool" />
+          <Property Name="Sections" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="ArticleObjectPool">
           <Key>
@@ -311,6 +313,7 @@
           <EntitySetMapping Name="ArticleHeaders">
             <EntityTypeMapping TypeName="DatabaseModel.ArticleHeader">
               <MappingFragment StoreEntitySet="ArticleHeader">
+                <ScalarProperty Name="Sections" ColumnName="Sections" />
                 <ScalarProperty Name="ArticleTitle" ColumnName="ArticleTitle" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />

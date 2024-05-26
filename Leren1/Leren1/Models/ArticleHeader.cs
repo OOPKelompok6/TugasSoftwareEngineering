@@ -37,6 +37,8 @@ public partial class ArticleHeader
 
     public string ArticleTitle { get; set; }
 
+    public int Sections { get; set; }
+
 
 
     public virtual CategoryHeader CategoryHeader { get; set; }

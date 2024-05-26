@@ -52,12 +52,12 @@
             </div>
 
             <div class="btn-container">
-                <asp:Button ID="btnSubmit" runat="server" Text="Create Account" CssClass="btn"/>
+                <asp:Button ID="btnSubmit" runat="server" Text="Create Account" OnClick="btnSubmit_Click" CssClass="btn"/>
             </div>
 
             <div class="HaveAccount">
                 <asp:Label ID="HaveaccountLbl" runat="server" Text="Have an account?"></asp:Label>
-                <asp:LinkButton ID="HaveaccountLb" CssClass="haveAccount" runat="server" >Sign In</asp:LinkButton>
+                <asp:LinkButton ID="HaveaccountLb" CssClass="haveAccount" runat="server" Onclick="HaveaccountLb_Click" >Sign In</asp:LinkButton>
             </div>
         </div>
     </form>

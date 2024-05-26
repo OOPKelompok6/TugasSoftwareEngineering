@@ -18,7 +18,8 @@ namespace Leren1.Pages
         private static String Category;
         private static String Subject;
         private static int Sections;
-        private static List<ArticleObjectPool> curObjPool = new List<ArticleObjectPool>();
+        private static int IsUpdate;
+        private static List<ArticleObjectPool> curObjPool = null;
         protected void Page_Load(object sender, EventArgs e)
         {
             Titles = Request["Title"];
@@ -26,6 +27,14 @@ namespace Leren1.Pages
             Subject = Request["Subject"];
             ArticleID = Request["ID"];
             Sections = Convert.ToInt32(Request["Sections"]);
+            IsUpdate = Convert.ToInt32(Request["IsUpdate"]);
+
+            if(IsUpdate == 1)
+            {
+                DatabaseEntities1 db = DatabaseSingleton.GetInstance();
+                curObjPool = (from o in db.ArticleObjectPools orderby o.BuildOrder where o.ArticleID == ArticleID select o).ToList();
+            }
+
             CreateTitle();
 
             for (int i = 1; i <= Sections; i++)
@@ -64,6 +73,12 @@ namespace Leren1.Pages
             sectBreak.Attributes["runat"] = "server";
             textDiv.Controls.Add(sectBreak);
 
+            //Update Checking
+            if(IsUpdate == 1)
+            {
+                setUpdateValues(sectBreak, Counter);
+            }
+
             HtmlGenericControl textSpan = new HtmlGenericControl("span");
             textSpan.Attributes["class"] = "align-self-stretch inpSec alatsi-regular";
             textSpan.InnerHtml = "Section Break";
@@ -76,6 +91,12 @@ namespace Leren1.Pages
             ContentBox.TextMode = TextBoxMode.MultiLine;
             dynamicDiv.Controls.Add(ContentBox);
 
+            //Update Checking
+            if (IsUpdate == 1)
+            {
+                setUpdateValues(ContentBox, Counter);
+            }
+
             DropDownList ddlType = new DropDownList();
             ddlType.ID = "ddlType" + Convert.ToString(Counter);
             ddlType.Items.Add(new ListItem("Text", "1"));
@@ -83,6 +104,12 @@ namespace Leren1.Pages
             ddlType.Items.Add(new ListItem("Video", "3"));
             ddlType.Attributes["class"] = "btn dropdown-toggle alatsi-regular inpSec";
             dynamicDiv.Controls.Add(ddlType);
+
+            //Update Checking
+            if (IsUpdate == 1)
+            {
+                setUpdateValues(ddlType, Counter);
+            }
 
             Label errLabel = new Label();
             errLabel.ID = "errLabel" + Convert.ToString(Counter);
@@ -119,25 +146,33 @@ namespace Leren1.Pages
 
 
                 String objId = "";
-                while(true)
+                if(IsUpdate == 1)
                 {
-                    String curId = GenerateObjectID();
-                    ArticleObjectPool testObj = (from o in db.ArticleObjectPools where o.ObjectID == curId select o).ToList().FirstOrDefault();
-                    if(curObjLclPool != null)
+                    objId = curObjPool[i - 1].ObjectID;
+                }
+                else
+                {
+                    while (true)
                     {
-                        testObj = (from c in curObjLclPool where c.ObjectID == curId select c).ToList().FirstOrDefault();
-                        if(testObj != null)
+                        String curId = GenerateObjectID();
+                        ArticleObjectPool testObj = (from o in db.ArticleObjectPools where o.ObjectID == curId select o).ToList().FirstOrDefault();
+                        if (curObjLclPool != null)
                         {
-                            continue;
+                            testObj = (from c in curObjLclPool where c.ObjectID == curId select c).ToList().FirstOrDefault();
+                            if (testObj != null)
+                            {
+                                continue;
+                            }
+                        }
+
+                        if (testObj == null)
+                        {
+                            objId = curId;
+                            break;
                         }
                     }
-
-                    if(testObj == null)
-                    {
-                        objId = curId;
-                        break;
-                    }
                 }
+                
 
                 if (TitleCheck(curDdl, curTextBox, curLabel) || VideoCheck(curDdl, curTextBox, curLabel) || ImgCheck(curDdl, curTextBox, curLabel))
                 {
@@ -166,11 +201,15 @@ namespace Leren1.Pages
 
             for (int i = 0; i < Sections; i++)
             {
+                if(IsUpdate == 1)
+                {
+                    db.ArticleObjectPools.Remove(curObjPool[i]);
+                }
                 db.ArticleObjectPools.Add(curObjLclPool[i]);
             }
             db.SaveChanges();
 
-            Response.Redirect("~/Pages/ArticleTemplate.aspx?ID=" + ArticleID + "&Sections=" + Convert.ToString(Sections));
+            Response.Redirect("~/Pages/OperationSuccess.aspx");
         }
 
         private String GenerateObjectID()
@@ -224,5 +263,25 @@ namespace Leren1.Pages
             }
             return false;
         }
+
+        private void setUpdateValues(Control curCtrl, int buildOrder) 
+        { 
+            if(curCtrl is TextBox)
+            {
+                ((TextBox)curCtrl).Text = curObjPool[buildOrder - 1].ContentString;
+            }
+            else if(curCtrl is DropDownList)
+            {
+                ((DropDownList)curCtrl).SelectedValue = Convert.ToString(curObjPool[buildOrder - 1].ObjectType);
+            }
+            else if(curCtrl is CheckBox)
+            {
+                if(curObjPool[buildOrder - 1].IsPageBreak == 1)
+                {
+                    ((CheckBox)curCtrl).Checked = true;
+                }
+            }
+        }
+
     }
 }

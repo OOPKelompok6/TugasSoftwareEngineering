@@ -9,6 +9,7 @@
     <Property Name="SubjectID" Type="varchar" MaxLength="5" Nullable="false" />
     <Property Name="UserID" Type="char" MaxLength="10" Nullable="false" />
     <Property Name="ArticleTitle" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Sections" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="ArticleObjectPool">
     <Key>
