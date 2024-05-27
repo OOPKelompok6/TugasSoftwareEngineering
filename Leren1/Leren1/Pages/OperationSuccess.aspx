@@ -16,10 +16,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="d-flex flex-column justify-content-center align-items-center">
-        <h1 class="alatsi-regular my-3" onload="redirectDelay()">Operation Success</h1>
-        <div class="col-sm-8">
-            <img class="p-0 img-fluid fill-con object-fit-contain rounded" src="../Assets/Picture/Success.gif" />
+        <h1 class="alatsi-regular my-3">Operation Success</h1>
+        <div class="col-sm-6 d-flex">
+            <div class="mx-auto">
+                <img class="p-0 img-fluid object-fit-contain rounded" src="../Assets/Picture/Success.gif" />
+            </div>
         </div>
-        <h4 class="alatsi-regular my-3 text-align-center">You will be redirected shortly</h4>
+        <h4 class="alatsi-regular mt-2 mb-4 text-align-center">You will be redirected shortly</h4>
     </div>
 </asp:Content>
